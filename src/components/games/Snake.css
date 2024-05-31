@@ -1,60 +1,59 @@
 .snake-game {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #222;
-    color: #fff;
-  }
-  
-  .grid {
-    display: grid;
-    border: 2px solid #fff;
-  }
-  
-  .cell {
-    border: 1px solid #333;
-  }
-  
-  .cell.snake {
-    background-color: #6f9;
-  }
-  
-  .cell.food {
-    background-color: #f66;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-  }
-  
-  .overlay h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  .overlay button {
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    background-color: #f66;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .overlay button:hover {
-    background-color: #d44;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* background-color: #222; */
+  color: #fff;
+}
+
+.grid {
+  display: grid;
+  border: 2px solid #fff;
+}
+
+.cell {
+  border: 1px solid #333;
+}
+
+.cell.snake {
+  background-color: #6f9;
+}
+
+.cell.food {
+  background-color: #f66;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.overlay h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.overlay button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #f66;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.overlay button:hover {
+  background-color: #d44;
+}

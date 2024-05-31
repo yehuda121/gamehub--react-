@@ -1,35 +1,38 @@
-/* Styles for GamesHomePage */
+/* GamesHome.css */
 
-/* Container */
-.games-home-container {
-    text-align: center;
-    margin-top: 50px;
+.games-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
   
-/* Title */
-.games-home-title {
-    font-size: 24px;
-    margin-bottom: 20px;
+.games-title {
+  font-size: 2.5rem;
+  color: #f56e1b;
+  margin-bottom: 2rem;
 }
   
-/* Button */
-.games-home-button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: background-color 0.3s;
+.game-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-  
-/* Button hover effect */
-.games-home-button:hover {
-    background-color: #45a049; /* Darker Green */
+
+.game-button {
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  background-color: #f56e1b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
 }
-  
+
+.game-button:hover {
+  background-color: #3700b3;
+}

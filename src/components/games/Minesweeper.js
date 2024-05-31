@@ -146,17 +146,23 @@ const Minesweeper = () => {
             break;
         }
     };
+    
+    // Function to start over and initialize the game
+    const handleStartOver = () => {
+        initializeBoard();
+    };
 
     return (
         <div className="minesweeper">
-        <div>
-            <label htmlFor="difficulty">Select Difficulty:</label>
-            <select id="difficulty" onChange={handleDifficultyChange}>
-            <option value="easy">Easy</option>
-            <option value="hard">Hard</option>
-            <option value="very-hard">Very Hard</option>
-            </select>
-        </div>
+            <div>
+                <label htmlFor="difficulty">Select Difficulty:</label>
+                <select id="difficulty" onChange={handleDifficultyChange}>
+                    <option value="easy">Easy</option>
+                    <option value="hard">Hard</option>
+                    <option value="very-hard">Very Hard</option>
+                </select>
+                <button onClick={handleStartOver}>Start Over</button>
+            </div>
             {board.map((row, x) => (
                 <div key={x} className="row">
                     {row.map((cell, y) => (

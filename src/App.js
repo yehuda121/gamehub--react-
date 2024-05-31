@@ -34,6 +34,7 @@ import GamesHome from './components/games/GamesHome';
 import Login from './components/Login';
 import Minesweeper from './components/games/Minesweeper';
 import Backgammon from './components/games/Backgammon';
+import Snake from './components/games/Snake';
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
         <Route path="/Login" element={<Login />} />
         <Route path="/Minesweeper" element={<Minesweeper />} />
         <Route path="/Backgammon" element={<Backgammon />} />
+        <Route path="/Snake" element={<Snake />} />
       </Routes>
     </BrowserRouter>
   );

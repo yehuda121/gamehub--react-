@@ -1,7 +1,8 @@
+// Login.js
 
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-// import './Login.css'; 
+import './Login.css';
 
 const Login = ({ onLogin }) => {
   const [username, setUsername] = useState('');
@@ -18,7 +19,7 @@ const Login = ({ onLogin }) => {
   };
 
   return (
-    <div className="login-container-insidLogin">
+    <div className="login-container">
       <h2>Login</h2>
       <input
         type="text"
